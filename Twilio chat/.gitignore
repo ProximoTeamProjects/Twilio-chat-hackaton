@@ -24,4 +24,4 @@ dist-ssr
 *.sw?
 
 # Credentials
-.env
+Twilio\ chat/.env
