@@ -16,7 +16,7 @@ export const ChatProvider = ({ children }) => {
     const handleInputChange = e => {   
 
         setUser({
-            ...user,
+            ...e,
             [e.target.name]: e.target.value
         })
 
@@ -31,9 +31,6 @@ export const ChatProvider = ({ children }) => {
 
             setError(true);
             setAlerta('Todos los campos son obligatorios');
-
-        }else {
-
             console.log(user)
 
 

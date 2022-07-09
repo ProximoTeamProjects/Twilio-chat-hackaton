@@ -6,12 +6,12 @@ export const Form = () => {
   const { name, lobby } = user;
 
   return (
-    <form  className="flex flex-col items-center mt-10 px-4 text-xl max-w-screen-2xl mx-auto w-full " onSubmit={handleSubmit}>
+    <form  className="flex flex-col items-center mt-10 px-10 text-xl max-w-screen-2xl mx-auto w-full " onSubmit={handleSubmit}>
         
-        <div className="flex flex-col w-full focus-within:text-gray-400">
-            <label className="font-bold cursor-pointer" htmlFor='user'>Nombre de usuario</label>
+        <div className="flex flex-col w-full focus-within:text-gray-500">
+            <label className="font-bold cursor-pointer" htmlFor='name'>Nombre de usuario</label>
             <input 
-                id="user"
+                id="name"
                 name="name"
                 type='text'
                 placeholder='Elliot Alderson'
@@ -20,11 +20,11 @@ export const Form = () => {
                 onChange={ handleInputChange }
             />
         </div>
-        <div className="flex flex-col mt-7 w-full focus-within:text-gray-400">
+        <div className="flex flex-col mt-7 w-full focus-within:text-gray-500">
             <label className="font-bold cursor-pointer"  htmlFor='lobby'>Nombre de la sala:</label>
             <input 
                 id="lobby"
-                name="name"
+                name="lobby"
                 type='textarea'
                 placeholder='Elliot Alderson'
                 className="mt-2 bg-gray-100 rounded placeholder:text-slate-500 placeholder:text-base p-1 gray"
