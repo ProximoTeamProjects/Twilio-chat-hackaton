@@ -20,8 +20,6 @@ export const ChatProvider = ({ children }) => {
             [e.target.name]: e.target.value
         })
 
-        console.log(user)
-
     }
     
 
